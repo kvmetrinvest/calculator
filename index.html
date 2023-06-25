@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Ипотечный калькулятор – рассчитать ипотеку онлайн на сайте</title>
+    <meta name="description" content="Быстрый расчет стоимости ипотеки через наш ипотечный онайн-калькулятор.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link
+      rel="preload"
+      href="/dist/fonts/Gilroy-Medium.woff"
+      as="font"
+      crossorigin="anonymous"/>
+    <link
+      rel="preload"
+      href="/dist/fonts/Gilroy-Bold.woff"
+      as="font"
+      crossorigin="anonymous"/>
+    <link
+      rel="preload"
+      href="/dist/fonts/Gilroy-SemiBold.woff"
+      as="font"
+      crossorigin="anonymous"/>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Yandex.Metrika counter -->
+    
+    <!-- /Yandex.Metrika counter -->
+   
+    <link
+      href="css/style.css"
+      type="text/css"
+      data-template-style="true"
+      rel="stylesheet"/>
+    <script type="text/javascript">
+      if (!window.BX) window.BX = {}
+      if (!window.BX.message)
+        window.BX.message = function (mess) {
+          if (typeof mess === "object") {
+            for (let i in mess) {
+              BX.message[i] = mess[i]
+            }
+            return true
+          }
+        }
+    </script>
+    <script type="text/javascript">
+      ;(window.BX || top.BX).message({
+        JS_CORE_LOADING: "Загрузка...",
+        JS_CORE_NO_DATA: "- Нет данных -",
+        JS_CORE_WINDOW_CLOSE: "Закрыть",
+        JS_CORE_WINDOW_EXPAND: "Развернуть",
+        JS_CORE_WINDOW_NARROW: "Свернуть в окно",
+        JS_CORE_WINDOW_SAVE: "Сохранить",
+        JS_CORE_WINDOW_CANCEL: "Отменить",
+        JS_CORE_WINDOW_CONTINUE: "Продолжить",
+        JS_CORE_H: "ч",
+        JS_CORE_M: "м",
+        JS_CORE_S: "с",
+        JSADM_AI_HIDE_EXTRA: "Скрыть лишние",
+        JSADM_AI_ALL_NOTIF: "Показать все",
+        JSADM_AUTH_REQ: "Требуется авторизация!",
+        JS_CORE_WINDOW_AUTH: "Войти",
+        JS_CORE_IMAGE_FULL: "Полный размер",
+      })
+    </script>
+    <script type="text/javascript" src="js/core.min.js"></script>
+
+    <script type="text/javascript">
+      ;(window.BX || top.BX).message({
+        LANGUAGE_ID: "ru",
+        FORMAT_DATE: "DD.MM.YYYY",
+        FORMAT_DATETIME: "DD.MM.YYYY HH:MI:SS",
+        COOKIE_PREFIX: "BITRIX_SM",
+        SERVER_TZ_OFFSET: "10800",
+        UTF_MODE: "Y",
+        SITE_ID: "s1",
+        SITE_DIR: "/",
+        USER_ID: "",
+        SERVER_TIME: "1680685315",
+        USER_TZ_OFFSET: "0",
+        USER_TZ_AUTO: "Y",
+        bitrix_sessid: "719ca2f296666a59c53cb107dbbde5a8",
+      })
+    </script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      BX.setCSSList([
+        "/dist/css/all.css",
+        "/local/components/arturgolubev/search.title/templates/mini/style.css",
+      ])
+    </script>
+
+    <script
+      type="text/javascript"
+      src="js/template.js">
+    </script>
+    <script
+      type="text/javascript"
+      src="js/page.js">
+    </script>
+    <link rel="preload" href="/local/templates/main/js/widgets/widgets.css" />
+  </head>
+  <body>
+    <div id="panel-bx"></div>
+    <script src="js/share.js" async></script>
+
+    <div class="page-wrap js-p-wrap">
+      <div id="lean_overlay"></div>
+      <div class="sidebar-directions">
+        <div class="sidebar-directions__wrap-logo">
+          <div class="sidebar-directions__close">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 1L24.0011 23.0019"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+              <path
+                d="M23.9995 1.00076L1.99766 23.0018"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="sidebar-directions__logo">
+            <img alt="logo" src="fonts/sidebar-logo.svg" />
+          </div>
+        </div>
+
+      </div>
+      <div class="block-elips">
+        <div class="color-ellipse"></div>
+        <div class="color-ellipse"></div>
+      </div>
+      <header class="header">
+        <div class="container">
+          
+      <div class="header-buttons header-buttons-main">
+        
+            
+          </div>
+          
+        </div>
+      
+      <main class="main-red">
+        <div class="container">
+          <div class="block">
+            <div class="page-title-block">
+              <h1 class="page-title-block__headline">Ипотечный калькулятор</h1>
+              <div class="page-title-block__search-wrapper">
+
+                      
+              </div>
+            </div>
+            <div class="page-desc">
+              <p>
+                Рассчитайте ипотеку онлайн с помощью ипотечного калькулятора.
+                Сервис поможет узнать размер ежемесячных платежей, сумму
+                переплаты по банковским процентам и оценить размер экономии за
+                счет досрочного погашения.
+              </p>
+            </div>
+            <div class="calculators__account-participants">
+              <p class="calculators__account-participants-key">
+                Расчетов сегодня
+              </p>
+              <p class="calculators__account-participants-value">158</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="block-container block-section-calculators">
+            <input type="hidden" id="section_id" value="12724" />
+            <div class="property-calculator">
+              <div class="calculator_s__col">
+                <div class="calculators__container">
+                  <div
+                    class="property-calculator"
+                    id="v-mortgage-calculator"
+                    v-cloak>
+                    <mortgage-calculator></mortgage-calculator>
+                  </div>
+                </div>
+                <div
+                  class="
+                    calculators__additional-functions
+                    credit-holiday__additional-functions">
+                  <div class="calculators__additional-functions-left"></div>
+                  <div class="calculators__additional-functions-middle"></div>
+                  <div class="calculators__additional-functions-right">
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="calculators__add-info js--add-info">
+                  <div class="calculators__add-info-title">
+                    Справочная информация
+                  </div>
+                  <div class="calculators__wrap-add-info">
+                    <h3 class="js--add-info-block" data-anchor="1">
+                      Как рассчитать ипотеку в онлайн-калькуляторе?
+                    </h3>
+                    <p>
+                      В соответствующие поля для заполнения введите стоимость
+                      объекта недвижимости и размер средств, которые вы готовы
+                      внести в качестве первоначального взноса, но не ниже
+                      размера, установленного ипотечной программой.
+                    </p>
+                    <p>
+                      Калькулятор автоматически рассчитает сумму кредитных
+                      средств, после чего вам необходимо будет указать срок
+                      кредита, предварительно выбрав формат времени (год или
+                      месяц). Далее укажите процентную ставку по ипотеке.
+                    </p>
+                    <p>
+                      Если вы знаете сумму кредита, то можете сразу перейти к
+                      заполнению этого поля.
+                    </p>
+                    <p>
+                      Для ипотечных программ с господдержкой действуют следующие
+                      условия:
+                    </p>
+                    <p>
+                      <b>Льготная ипотека</b> – ставка до 8%, максимальный срок
+                      кредита устанавливается банком, но не более 30 лет,
+                      первоначальный взнос от 15%, сумма кредита до 12 млн
+                      рублей для Москвы, Мособласти, Санкт-Петербурга,
+                      Ленобласти и 6 млн рублей для других регионов.
+                      Максимальную сумму кредита можно увеличить за счет средств
+                      рыночной ипотеки или региональной ипотечной программы.
+                    </p>
+                    <p>
+                      <b>Семейная ипотека</b> – ставка до 6%, максимальный срок
+                      кредита до 30 лет, первоначальный взнос от 15%, сумма
+                      кредита до 12 млн рублей в Москве, Мособласти,
+                      Санкт-Петербурге, Ленобласти и 6 млн рублей для других
+                      регионов. Максимальную сумму кредита можно увеличить за
+                      счет средств рыночной ипотеки или региональной ипотечной
+                      программы.
+                    </p>
+                    <p>
+                      <b>Сельская ипотека</b> – ставка до 3%, максимальный срок
+                      кредита 25 лет, первоначальный взнос от 10%, сумма кредита
+                      до 5 млн рублей для регионов Дальневосточного федерального
+                      округа, Ленинградской области, Ямало-Ненецкого автономного
+                      округа и до 3 млн рублей для остальных регионов (кроме
+                      Москвы, МО и Санкт-Петербурга).
+                    </p>
+                    <p>
+                      <b>Дальневосточная ипотека</b> – ставка до 2%,
+                      максимальный срок кредита до 20 лет, первоначальный взнос
+                      от 15%, сумма кредита до 6 млн рублей;
+                    </p>
+                    <p>
+                      <b>Льготная ипотека для IT-специалистов</b> – ставка до
+                      5%, первоначальный взнос от 15%, сумма кредита до 18 млн
+                      рублей для регионов с населением свыше 1 млн человек и 9
+                      млн рублей для регионов с населением менее 1 млн человек.
+                      Максимальную сумму кредита можно увеличить до 30 и 15 млн
+                      рублей, соответственно, за счет средств рыночной ипотеки
+                      или другой льготной ипотечной программы.
+                    </p>
+                    <p>
+                      В поле «Тип платежа» необходимо выбрать схему, по которой
+                      будет осуществляться расчет графика платежей. В настоящее
+                      время большинство банков используют аннуитетный тип, но
+                      некоторые кредитные организации на выбор могут предложить
+                      дифференцированный платеж. Если вы не знаете, по какой
+                      схеме будет осуществляться погашение ипотеки – выберете
+                      аннуитетный тип платежа для предварительного расчета.
+                    </p>
+                    <h3 class="js--add-info-block" data-anchor="2">
+                      В чем отличие аннуитетного платежа от дифференцированного?
+                    </h3>
+                    <p>
+                      <b>Аннуитетный</b> тип платежей подразумевает выплату
+                      каждый месяц одной и той же суммы по кредиту. В первую
+                      половину периода ипотеки большая часть средств от
+                      ежемесячных платежей идет на оплату процентов по кредиту,
+                      во вторую – на оплату основного долга (тела кредита).
+                    </p>
+                    <p>
+                      При <b>дифференцированной</b> схеме размер ежемесячных
+                      платежей по кредиту разный. В течение всего срока ипотеки
+                      погашение основного долга происходит равными долями, но
+                      сумма начисленных процентов уменьшается каждый месяц.
+                    </p>
+                    <h3 class="js--add-info-block" data-anchor="3">
+                      Какие средства можно использовать для первоначального
+                      взноса?
+                    </h3>
+                    <p>
+                      Помимо собственных средств, в качестве первоначального
+                      взноса по ипотеке можно использовать средства
+                      <b>материнского капитала</b>:
+                    </p>
+                    <p>На <b>первого ребенка</b> - 524,5 тыс. рублей;</p>
+                    <p>
+                      На <b>второго и последующих детей</b> - 693,1 тыс. рублей
+                      или 168,6 тыс. рублей если семья уже оформляла маткапитал.
+                    </p>
+                    <h3 class="js--add-info-block" data-anchor="4">
+                      Как можно снизить ежемесячный платеж или сократить срок
+                      ипотеки?
+                    </h3>
+                    <p>
+                      Досрочное погашение ипотеки позволяет снизить ежемесячный
+                      платеж или сократить срок жилищного кредита. На эти цели
+                      можно использовать средства маткапитал и
+                      средства налогового вычета:
+                    </p>
+                    <p>
+                      <b>Имущественный вычет</b> – до 260 тыс. рублей (супруги
+                      до 520 тыс. рублей);
+                    </p>
+                    <p>
+                      <b>Вычет с ипотечных процентов</b> – до 390 тыс. рублей
+                      (супруги до 780 тыс. рублей).
+                    </p>
+                    <p>
+                      Кроме этого, многодетные семьи имеют право на
+                      <b>выплату до 450 тыс. рублей</b> на погашение ипотеки,
+                      если в семье с 1 января 2019 года родился третий или
+                      последующий ребенок.
+                    </p>
+                    <h3 class="js--add-info-block" data-anchor="5">
+                      Насколько расчеты ипотечного калькулятора будут совпадать
+                      с реальными условиями ипотеки?
+                    </h3>
+                    <p>
+                      Все расчеты, сделанные ипотечным калькулятором -
+                      примерные. Точные параметры ипотеки будут зависеть от
+                      конкретного банка и условий ипотечной программы.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <script>
+          // ajax-подгрузка калькуляторов пока не работает, надо перегружать vue-приложение, менять меню, url и тд
+          // $(document).ready(function (){
+          //    $('a.calculators-menu__item').on('click',function (e){
+          //        e.preventDefault();
+          //        $.ajax({
+          //            url: $(this).attr('href'),
+          //            type: "GET",
+          //            success: function (result) {
+          //                if (!!result){
+          //                 $('.calculators').html($(result).find('.calculators').html());
+          //                }
+          //            }
+          //        });
+          //    })
+          // });
+        </script>
+        
+      </main>
+      
+    </header>
+  </div>
+</body>
+</html>
